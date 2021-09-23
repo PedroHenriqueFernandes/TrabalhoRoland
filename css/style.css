@@ -1,0 +1,68 @@
+body{
+    background-color: #333;
+}
+
+/*   Header   */
+#Header{
+    background-color: #141414;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    top: 0px;
+    left: 0px;
+}
+#TextHeader{
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+/*   Body   */
+#body{
+    position: relative;
+    padding-bottom: 100%;
+    width: 60%;
+    background-color: rgb(170, 165, 165);
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 80px;
+}
+#ChoseFile{
+    padding: 20px 10px;
+    width: 200px;
+    background-color: #333;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+#selectColumn{
+    padding: 5px;
+    width: 90%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 7px;
+    border: 2px solid #333;
+}
+#canvas{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#Lista{
+    display: none;
+    flex-direction: column;
+}
+table, th, td{
+    border: 1px solid black;
+}

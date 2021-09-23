@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div id="body">
+
+        <div style="display: flex; justify-content: center;">
+            <input type="file" style="display: none;" name="file" id="file" class="inputFile" onchange="pegaCSV(this)" accept=".csv">
+            <label for="file" id="ChoseFile">Escolha um arquivo (.csv)</label>
+        </div>
+        
+        <div style="display: flex; justify-content: center;padding: 20px;">
+            <select id="selectColumn" onchange="gerargrafico()">
+            </select>
+        </div>
+
+        <div id="canvas">
+            <canvas id="pie-chart" ></canvas>
+        </div>
+
+        <table id="Lista" border="1px">
+        </table>
+
+                
+    </div>
+
+    <div id="Header">
+        <h1 id="TextHeader">Escolha seu Arquivo</h1>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
