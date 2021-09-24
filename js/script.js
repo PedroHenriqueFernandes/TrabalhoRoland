@@ -182,7 +182,7 @@ function FiltroLista(valorSelect){
 function FiltroIdade(valorSelect){
   values.sort()
   for (let i = 1; i < values.length -3; i++) {
-    let data = (new Date(String(values[i][0][valorSelect].replace('-','/'))))
+    let data = (new Date(String(values[i][0][valorSelect])))
     var dia = String(data.getDate()).padStart(2, '0');
     var mes = String(data.getMonth() + 1).padStart(2, '0');
     var ano = data.getFullYear();
