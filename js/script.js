@@ -99,7 +99,7 @@ function gerargrafico(){
             cnt++;
         }
     }
-    if(valorSelect!='82'){
+    if(valorSelect!='82' || valorSelect!='3'){
       addGrafico(labels, data)
     } else if (valorSelect=='82'){
       try {
