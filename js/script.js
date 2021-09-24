@@ -182,16 +182,16 @@ function FiltroLista(valorSelect){
 function FiltroIdade(valorSelect){
   values.sort()
   for (let i = 1; i < values.length -3; i++) {
-    let data = (new Date(String(values[i][0][valorSelect]).replace('-','/')))
+    let data = (new Date(String(values[i][0][valorSelect].replace('-','/'))))
     var dia = String(data.getDate()).padStart(2, '0');
     var mes = String(data.getMonth() + 1).padStart(2, '0');
     var ano = data.getFullYear();
     if (idade(ano, mes, dia) <= 20){
       values[i][0][valorSelect] = 'Menor ou Igual à 20 anos'
     } else if (idade(ano, mes, dia) <= 30) {
-      values[i][0][valorSelect] = 'Menor ou Igual à 30 anos'
+      values[i][0][valorSelect] = 'De 21 à 30 anos'
     } else if (idade(ano, mes, dia) <= 40) {
-      values[i][0][valorSelect] = 'Menor ou Igual à 40 anos'
+      values[i][0][valorSelect] = 'De 31 à 40 anos'
     } else {
       values[i][0][valorSelect] = 'Maior que 40 anos'
     }
