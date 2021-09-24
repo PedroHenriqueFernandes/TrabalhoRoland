@@ -99,9 +99,19 @@ function gerargrafico(){
             cnt++;
         }
     }
-    if(valorSelect!='82' || valorSelect!='3'){
+    if(valorSelect!='82'){
       addGrafico(labels, data)
     } else if (valorSelect=='82'){
+      try {
+        myChart = new Chart(table, config);
+      } catch (error) {
+        myChart.destroy();
+        myChart = new Chart(table, config);
+      }
+    }
+    if(valorSelect!='3'){
+      addGrafico(labels, data)
+    } else if (valorSelect=='3'){
       try {
         myChart = new Chart(table, config);
       } catch (error) {
